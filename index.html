@@ -3,20 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <title>Tenki Weather App</title>
   </head>
   <body>
-    <h1>How is the weather</h1>
-    <footer>
-      Coded by
-      <a href="https://github.com/norikog3" target="_blank">Noriko Garratt</a>,
-      is
-      <a href="https://github.com/norikog3/Tenki-app" target="_blank"
-        >open-sourced on GitHub</a
-      >, and
-      <a href="https://tenki-app-noriko.netlify.app" target="_blank"
-        >hosted on Netlify</a
-      >
-    </footer>
+    <div class="weather-app">
+      <header>
+        <form>
+          <input type="search" placeholder="Enter a city" required />
+          <input type="submit" value="search" />
+        </form>
+      </header>
+      <main>
+        <h1>Tokyo</h1>
+        <div>
+          <p>
+            Tuesday 19:20, scattered clouds,<br />
+            humidity:65%, wind:3.13 km
+          </p>
+        </div>
+        <div>
+          <p>☀️ 29℃</p>
+        </div>
+      </main>
+      <footer>
+        This project was oded by
+        <a href="https://github.com/norikog3" target="_blank">Noriko Garratt</a
+        >, is
+        <a href="https://github.com/norikog3/Tenki-app" target="_blank"
+          >open-sourced on GitHub</a
+        >, and
+        <a href="https://tenki-app-noriko.netlify.app" target="_blank"
+          >hosted on Netlify</a
+        >
+      </footer>
+    </div>
   </body>
 </html>
