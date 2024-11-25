@@ -4,29 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
     <title>Tenki Weather App</title>
   </head>
   <body>
     <div class="weather-app">
       <header>
         <form>
-          <input type="search" placeholder="Enter a city" required />
-          <input type="submit" value="search" />
+          <input
+            type="search"
+            placeholder="Enter a city"
+            required
+            class="search-input"
+          />
+          <input type="submit" value="Search" class="search-button" />
         </form>
       </header>
       <main>
-        <h1>Tokyo</h1>
-        <div>
-          <p>
-            Tuesday 19:20, scattered clouds,<br />
-            humidity:65%, wind:3.13 km
-          </p>
-        </div>
-        <div>
-          <p>☀️ 29℃</p>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city">Tokyo</h1>
+
+            <p class="weather-app-details">
+              Tuesday 19:20, scattered clouds,<br />
+              humidity:<strong> 65.5%</strong>, wind:<strong> 15 km/h </strong>
+            </p>
+          </div>
+          <div class="weather-app-temperature-container">
+            <div class="weather-app-icon">☀️</div>
+            <div class="weather-app-temperature">29</div>
+            <div class="weather-app-temperature-unit">℃</div>
+          </div>
         </div>
       </main>
       <footer>
