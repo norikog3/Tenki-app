@@ -15,12 +15,13 @@
   <body>
     <div class="weather-app">
       <header>
-        <form>
+        <form class="search-form" id="search-form">
           <input
             type="search"
             placeholder="Enter a city"
             required
-            class="search-input"
+            id="search-form-input"
+            class="search-form-input"
           />
           <input type="submit" value="Search" class="search-button" />
         </form>
@@ -28,7 +29,7 @@
       <main>
         <div class="weather-app-data">
           <div>
-            <h1 class="weather-app-city">Tokyo</h1>
+            <h1 class="weather-app-city" id="weather-app-city">Tokyo</h1>
 
             <p class="weather-app-details">
               Tuesday 19:20, scattered clouds,<br />
@@ -54,5 +55,6 @@
         >
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
